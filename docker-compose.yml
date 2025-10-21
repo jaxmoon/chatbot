@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # PostgreSQL 데이터베이스
+  db:
+    image: postgres:15-alpine
+    container_name: chatbot-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: chatbot_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - chatbot-postgres-data:/var/lib/postgresql/data
+    networks:
+      - chatbot-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d chatbot_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Backend API 서버
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: chatbot-backend
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      DATABASE_URL: postgresql://user:password@db:5432/chatbot_db
+      CLAUDE_API_KEY: ${CLAUDE_API_KEY}
+      PORT: 4000
+      NODE_ENV: production
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://localhost:3000}
+      ADMIN_API_KEY: ${ADMIN_API_KEY}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - chatbot-network
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+      - /app/dist
+
+volumes:
+  chatbot-postgres-data:
+    name: chatbot-postgres-data
+
+networks:
+  chatbot-network:
+    name: chatbot-network
+    driver: bridge

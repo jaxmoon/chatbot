@@ -1,0 +1,284 @@
+// Prisma Schema for Chatbot System
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ========== Chat System ==========
+
+model ChatSession {
+  id            String       @id @default(cuid())
+  sessionToken  String       @unique
+  userId        String?      // nullable for guest users
+  status        ChatStatus   @default(ACTIVE)
+  metadata      Json?
+
+  // Chat Room Display
+  title             String?      // Chat room title (auto-generated from first user message)
+  lastMessageAt     DateTime?    // Last message timestamp for sorting
+  lastMessagePreview String?     // Preview of last message (max 100 chars)
+
+  // Conversation Flow State
+  currentFlowId String?
+  currentStepId String?
+  flowData      Json?        // collected data during flow
+
+  messages         ChatMessage[]
+  fallbackMessages FallbackMessage[]
+
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  endedAt       DateTime?
+
+  @@index([sessionToken])
+  @@index([createdAt])
+  @@index([userId])
+  @@index([lastMessageAt])
+}
+
+model ChatMessage {
+  id               String      @id @default(cuid())
+  sessionId        String
+  role             MessageRole
+  content          String      @db.Text
+  metadata         Json?       // quickReplies, flowStep, etc.
+
+  // Claude API Usage
+  promptTokens     Int?
+  completionTokens Int?
+
+  session          ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  createdAt        DateTime    @default(now())
+
+  @@index([sessionId])
+  @@index([createdAt])
+}
+
+// ========== FAQ System ==========
+
+model FaqCategory {
+  id          String   @id @default(cuid())
+  name        String   // Identifier (e.g., "shipping", "return")
+  nameKo      String   // Korean display name
+  description String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+
+  faqs        Faq[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isActive, order])
+}
+
+model Faq {
+  id           String      @id @default(cuid())
+  categoryId   String
+  question     String      @db.Text
+  answer       String      @db.Text
+  keywords     String[]    // Search keywords
+  viewCount    Int         @default(0)
+  helpfulCount Int         @default(0)
+  order        Int         @default(0)
+  isActive     Boolean     @default(true)
+
+  category     FaqCategory @relation(fields: [categoryId], references: [id])
+
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  @@index([categoryId])
+  @@index([isActive])
+}
+
+model QuestionIntent {
+  id          String   @id @default(cuid())
+  name        String   @unique // e.g., "PRODUCT_SEARCH", "ORDER_STATUS"
+  nameKo      String   // Korean display name
+  description String
+  patterns    String[] // Regex or keyword patterns
+  handler     String   // Handler class name
+  requiresAuth Boolean @default(false)
+  isActive    Boolean  @default(true)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ChatTemplate {
+  id          String   @id @default(cuid())
+  intentName  String   // Intent name
+  templateKey String   // e.g., "NOT_FOUND", "SUCCESS"
+  content     String   @db.Text
+  variables   String[] // Template variables
+  isActive    Boolean  @default(true)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([intentName, templateKey])
+}
+
+model ProductFaq {
+  id          String   @id @default(cuid())
+  productId   String   // External product reference
+  productName String
+  question    String   @db.Text
+  answer      String   @db.Text
+  category    String   // e.g., "spec", "usage", "compatibility"
+  isActive    Boolean  @default(true)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([productId])
+  @@index([isActive])
+}
+
+// ========== Fallback Messages (Admin Management) ==========
+
+model FallbackMessage {
+  id            String               @id @default(cuid())
+  sessionId     String
+  userMessage   String               @db.Text
+  reason        FallbackReason
+  errorDetails  String?              @db.Text
+  isResolved    Boolean              @default(false)
+  adminComment  String?              @db.Text
+  resolvedAt    DateTime?
+  resolvedBy    String?              // Admin user ID
+
+  session       ChatSession          @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  createdAt     DateTime             @default(now())
+  updatedAt     DateTime             @updatedAt
+
+  @@index([sessionId])
+  @@index([isResolved, createdAt])
+  @@index([reason])
+}
+
+// ========== Conversation Flow (Conversational Consultant) ==========
+
+model ConversationFlow {
+  id              String     @id @default(cuid())
+  name            String     @unique
+  nameKo          String
+  description     String
+  type            FlowType
+
+  // Trigger conditions
+  triggerIntent   String
+  triggerKeywords String[]
+
+  startStepId     String
+
+  steps           FlowStep[]
+  isActive        Boolean    @default(true)
+
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+
+  @@index([triggerIntent])
+}
+
+model FlowStep {
+  id            String   @id @default(cuid())
+  flowId        String
+  stepKey       String   // e.g., "ask_purpose", "ask_budget"
+
+  // Step content
+  message       String   @db.Text
+  messageType   StepMessageType
+
+  // Next step logic
+  nextStepLogic Json     // Conditional branching logic
+
+  // Data collection
+  collectData   String?  // Data key to collect
+  validation    Json?    // Validation rules
+
+  order         Int      @default(0)
+
+  flow          ConversationFlow @relation(fields: [flowId], references: [id], onDelete: Cascade)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([flowId, stepKey])
+  @@index([flowId, order])
+}
+
+// ========== Quick Replies ==========
+
+model QuickReply {
+  id        String        @id @default(cuid())
+  category  ReplyCategory
+
+  // Display conditions
+  triggerOn String        // e.g., "session_start", "after_intent:FAQ"
+  context   Json?         // Additional context conditions
+
+  // Button content
+  label     String
+  value     String        // Message or action to send
+  icon      String?
+
+  order     Int           @default(0)
+  isActive  Boolean       @default(true)
+
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  @@index([category, triggerOn])
+  @@index([isActive, order])
+}
+
+// ========== Enums ==========
+
+enum ChatStatus {
+  ACTIVE
+  ENDED
+  TRANSFERRED
+}
+
+enum MessageRole {
+  USER
+  ASSISTANT
+  SYSTEM
+}
+
+enum FlowType {
+  PRODUCT_RECOMMENDATION
+  PROCESS_GUIDE
+  TROUBLESHOOTING
+}
+
+enum StepMessageType {
+  QUESTION
+  INFO
+  RECOMMENDATION
+}
+
+enum ReplyCategory {
+  WELCOME
+  FAQ_MENU
+  FLOW_OPTION
+  CONTEXTUAL
+}
+
+enum FallbackReason {
+  OUT_OF_SCOPE
+  API_ERROR
+  RATE_LIMIT_ERROR
+  PARSING_ERROR
+  NO_RESPONSE
+  UNKNOWN_ERROR
+}
