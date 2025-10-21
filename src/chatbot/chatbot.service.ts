@@ -93,6 +93,45 @@ export class ChatbotService {
       },
     });
 
+    // ⚠️ 중요: 데이터베이스에 없는 제품인지 먼저 확인
+    const unknownProductCheck = await this.isUnknownProduct(content);
+    if (unknownProductCheck.isUnknown) {
+      const rejectionMessage = `죄송합니다. ${unknownProductCheck.unknownProduct}은(는) 저희가 취급하지 않는 제품입니다. 저희 쇼핑몰에서 판매하는 제품에 대해 문의해 주시면 도와드리겠습니다. 😊`;
+
+      // Save assistant rejection message
+      const assistantMessage = await this.prisma.chatMessage.create({
+        data: {
+          sessionId: session.id,
+          role: 'ASSISTANT',
+          content: rejectionMessage,
+          metadata: { intent: 'UNKNOWN_PRODUCT', unknownProduct: unknownProductCheck.unknownProduct },
+        },
+      });
+
+      // Save as fallback message for admin review
+      await this.saveFallbackMessage(session.id, content, 'OUT_OF_SCOPE', `Unknown product: ${unknownProductCheck.unknownProduct}`);
+
+      // Update session with last message info
+      const title = session.title || content.substring(0, 50);
+      await this.prisma.chatSession.update({
+        where: { id: session.id },
+        data: {
+          lastMessageAt: new Date(),
+          lastMessagePreview: rejectionMessage.substring(0, 100),
+          title: title,
+        },
+      });
+
+      return {
+        id: assistantMessage.id,
+        role: 'ASSISTANT',
+        content: rejectionMessage,
+        metadata: { intent: 'UNKNOWN_PRODUCT', unknownProduct: unknownProductCheck.unknownProduct },
+        createdAt: assistantMessage.createdAt,
+        quickReplies: await this.quickReplyService.getWelcomeQuickReplies(),
+      };
+    }
+
     try {
       // Load FAQ data for system prompt
       const faqs = await this.prisma.faq.findMany({
@@ -366,13 +405,16 @@ export class ChatbotService {
 - 범위 외 질문(날씨, 뉴스, 영화, 타사 비교, 법률/의료 자문 등)은 정중히 거절합니다
 
 답변 원칙:
-1. ⚠️ **절대적 원칙: 아래 상품 FAQ 데이터에 있는 정보를 그대로 사용하세요. 자체 지식이나 추측으로 제품 규격을 말하지 마세요**
-2. ⚠️ **제품 설치사이즈, 제품 크기 등 모든 수치는 반드시 상품 FAQ 데이터에서 정확히 가져와야 합니다**
-3. 상품 관련 질문은 상품 FAQ 데이터를 활용하여 정확하게 답변합니다
-4. FAQ에 없는 내용은 일반적인 쇼핑몰 정책을 기반으로 답변합니다
-5. 확실하지 않은 내용은 고객센터 연락을 안내합니다
-6. 범위 외 질문에는 "죄송합니다. 저는 쇼핑몰의 상품, 주문, 배송 등 쇼핑몰 이용과 관련된 문의만 도와드릴 수 있습니다. 😊"라고 답변합니다
-7. ⚠️ 정보가 부족한 경우 반드시 추가 질문하세요 (모든 경우의 수를 나열하지 마세요):
+1. ⚠️ **절대적 원칙: 아래 상품 FAQ 데이터에 있는 정보만 사용하세요. 절대 자체 지식이나 추측을 사용하지 마세요**
+2. ⚠️ **자체 지식 사용 금지**: 커튼, 블라인드, 인테리어 제품에 대한 일반적인 지식이 있더라도 절대 사용하지 마세요. 오직 아래 제공된 데이터만 사용하세요
+3. ⚠️ **데이터 범위 확인 필수**: 모든 제품 관련 질문에 답변하기 전에 반드시 아래 상품 FAQ 데이터 목록에서 해당 제품이 있는지 먼저 확인하세요
+4. ⚠️ **취급하지 않는 제품**: 상품 FAQ 데이터에 없는 제품은 절대 답변하지 마세요. "죄송합니다. 해당 제품은 저희가 취급하지 않는 제품입니다."라고 명확히 답변하세요
+5. ⚠️ **설치 방법, 사용 방법 답변 금지**: 상품 FAQ 데이터에 없는 제품의 설치 방법, 사용 방법, 규격 등을 절대 설명하지 마세요
+6. 상품 관련 질문은 상품 FAQ 데이터를 활용하여 정확하게 답변합니다
+7. FAQ에 없는 내용은 일반적인 쇼핑몰 정책을 기반으로 답변합니다
+8. 확실하지 않은 내용은 고객센터 연락을 안내합니다
+9. 범위 외 질문에는 "죄송합니다. 저는 쇼핑몰의 상품, 주문, 배송 등 쇼핑몰 이용과 관련된 문의만 도와드릴 수 있습니다. 😊"라고 답변합니다
+10. ⚠️ 정보가 부족한 경우 반드시 추가 질문하세요 (단, 취급하는 제품인 경우에만 추가 질문하세요. 모든 경우의 수를 나열하지 마세요):
 
    **⚠️ 제품 추천 시 절대 원칙:**
    - **커튼박스 안쪽 너비(양쪽 벽 사이 간격)는 제품 사이즈 선택의 가장 중요한 기준입니다**
@@ -457,6 +499,40 @@ ${productFaqText}
 - 고객센터: 1588-1234 (평일 09:00-18:00)`;
   }
 
+  /**
+   * 데이터베이스에 없는 제품인지 확인
+   * 알려진 제품이 아닌 특정 제품명이 언급되면 true 반환
+   */
+  private async isUnknownProduct(content: string): Promise<{ isUnknown: boolean; unknownProduct?: string }> {
+    const normalized = content.toLowerCase();
+
+    // 데이터베이스에 없는 제품 키워드들
+    const unknownProducts = [
+      { name: '베네시안 블라인드', keywords: ['베네시안', 'venetian'] },
+      { name: '로만 쉐이드', keywords: ['로만 쉐이드', '로만쉐이드', 'roman shade'] },
+      { name: '우드 블라인드', keywords: ['우드 블라인드', '우드블라인드', '우드', 'wood blind'] },
+      { name: '버티칼 블라인드', keywords: ['버티칼 블라인드', '버티칼블라인드', '버티컬', 'vertical blind'] },
+      { name: '허니콤 블라인드', keywords: ['허니콤', 'honeycomb'] },
+      { name: '플리츠 블라인드', keywords: ['플리츠', 'pleats'] },
+      { name: '세로 블라인드', keywords: ['세로 블라인드', '세로블라인드'] },
+      { name: '나무 블라인드', keywords: ['나무 블라인드', '나무블라인드'] },
+      { name: '실크 커튼', keywords: ['실크 커튼', '실크커튼', 'silk curtain'] },
+      { name: '벨벳 커튼', keywords: ['벨벳 커튼', '벨벳커튼', 'velvet curtain'] },
+      { name: '리넨 커튼', keywords: ['리넨 커튼', '리넨커튼', 'linen curtain'] },
+    ];
+
+    // 각 알 수 없는 제품 키워드 확인
+    for (const product of unknownProducts) {
+      for (const keyword of product.keywords) {
+        if (normalized.includes(keyword.toLowerCase())) {
+          return { isUnknown: true, unknownProduct: product.name };
+        }
+      }
+    }
+
+    return { isUnknown: false };
+  }
+
   private extractKeywords(content: string): string[] {
     // Extract relevant keywords from user message for ProductFAQ filtering
     const keywords: string[] = [];
@@ -476,7 +552,6 @@ ${productFaqText}
       '블라인드', 'blind',
       '롤블라인드', '롤',
       '알루미늄', 'aluminum',
-      '버티컬', 'vertical',
       '클래식', 'classic',
       '타임랩스', 'timelapse',
       '갤러리', 'gallery',
