@@ -3502,6 +3502,197 @@
         }
       ],
       "fallbackMessages": []
+    },
+    {
+      "id": "cmh09fv0y0000uakp3kaogx4l",
+      "sessionToken": "sess_1761032766396_01mvbd",
+      "userId": null,
+      "status": "ACTIVE",
+      "metadata": null,
+      "title": null,
+      "lastMessageAt": null,
+      "lastMessagePreview": null,
+      "currentFlowId": null,
+      "currentStepId": null,
+      "flowData": null,
+      "createdAt": "2025-10-21T07:46:06.411Z",
+      "updatedAt": "2025-10-21T07:46:06.411Z",
+      "endedAt": null,
+      "messages": [],
+      "fallbackMessages": []
+    },
+    {
+      "id": "cmh09fvt40001uakpgqfffmt2",
+      "sessionToken": "sess_1761032767422_vd8v8b",
+      "userId": null,
+      "status": "ACTIVE",
+      "metadata": null,
+      "title": "거실에 커튼을 설치하고 싶은데 어떤제품이 좋아?",
+      "lastMessageAt": "2025-10-21T08:02:41.767Z",
+      "lastMessagePreview": "네, 커튼 설치 시 커튼봉 외에 몇 가지 부자재가 추가로 필요합니다.\n\n커튼봉 설치를 위해 일반적으로 필요한 부자재는 다음과 같습니다:\n\n1. 커튼봉 고정용 브라켓\n- 천장이나 벽",
+      "currentFlowId": null,
+      "currentStepId": null,
+      "flowData": null,
+      "createdAt": "2025-10-21T07:46:07.431Z",
+      "updatedAt": "2025-10-21T08:02:41.772Z",
+      "endedAt": null,
+      "messages": [
+        {
+          "id": "cmh09g4ye0003uakp3tgads1g",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "USER",
+          "content": "거실에 커튼을 설치하고 싶은데 어떤제품이 좋아?",
+          "metadata": null,
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:46:19.285Z"
+        },
+        {
+          "id": "cmh09g8gh0005uakpsfp6v3m2",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "ASSISTANT",
+          "content": "네, 커튼 선택을 도와드리겠습니다. 커튼 구매를 위해 몇 가지 질문 드리겠습니다.\n\n1. 커튼박스 안쪽 너비가 어떻게 되시나요? 커튼박스의 양쪽 벽 사이의 간격을 말씀해 주세요. (예: 110mm, 150mm)\n\n커튼박스 안쪽 너비를 정확히 알아야 제품 사이즈를 추천할 수 있습니다. 커튼 종류(암막, 일반 등)만으로는 사이즈를 결정할 수 없습니다.\n\n2. 커튼 폭(가로 길이)이 몇 미터인가요?\n\n3. 어떤 종류의 커튼을 원하시나요? (일반 커튼, 암막 커튼, 쉬폰 커튼 등)\n\n4. 커튼봉을 사용하시나요, 아니면 커튼레일을 사용하시나요?\n\n위 정보를 알려주시면 적합한 제품을 추천해 드리겠습니다. 커튼박스 안쪽 너비가 가장 중요한 기준이니 반드시 알려주시기 바랍니다.",
+          "metadata": {
+            "intent": "PRODUCT_SEARCH"
+          },
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:46:23.826Z"
+        },
+        {
+          "id": "cmh09goqt0007uakpdh6na818",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "USER",
+          "content": "150mm인데?",
+          "metadata": null,
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:46:44.933Z"
+        },
+        {
+          "id": "cmh09gqvj0009uakp5i0y3e39",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "ASSISTANT",
+          "content": "알겠습니다. 커튼박스 안쪽 너비가 150mm이시군요.\n\n상품 FAQ 데이터를 확인해 보니 노못 스프링 커튼의 설치사이즈는 다음과 같습니다:\n\n- S사이즈: 100 - 120mm\n- M사이즈: 120 - 160mm \n- L사이즈: 160 - 200mm\n\n따라서 커튼박스 안쪽 너비 150mm에 해당하는 제품은 **M사이즈**입니다.\n\nM사이즈의 설치사이즈가 120-160mm이므로, 150mm 커튼박스에 잘 맞을 것 같습니다.\n\n이제 커튼 폭(가로 길이)이 몇 미터인지 알려주시면 정확한 수량을 추천해 드리겠습니다.",
+          "metadata": {
+            "intent": "FAQ"
+          },
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:46:47.695Z"
+        },
+        {
+          "id": "cmh09ky6o000buakp67imcqiv",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "USER",
+          "content": "3.2m야",
+          "metadata": null,
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:50:03.792Z"
+        },
+        {
+          "id": "cmh09l1d3000duakp8s3hvpn2",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "ASSISTANT",
+          "content": "알겠습니다. 커튼박스 안쪽 너비가 150mm이고, 커튼 폭이 3.2m이시군요.\n\n이 경우 노못 스프링 M사이즈를 다음과 같이 추천드립니다:\n\n**커튼레일 + 쉬폰커튼**\n- 3.2m: 3개\n\n**커튼레일 + 암막커튼** \n- 3.2m: 3개 (연장모듈 시 4개)\n\n**알루미늄 블라인드**\n- 3.2m: 4개 (연장모듈 시 5개) \n\n**우드블라인드**\n- 3.2m: 5개 (연장모듈 시 6개)\n\n커튼 종류(쉬폰, 암막)에 따라 약간의 차이가 있지만, 3.2m 길이의 경우 **M사이즈 스프링 3개**가 일반적으로 적당할 것 같습니다.\n\n설치 환경에 따라 제품 설치가 잘 되지 않을 수 있으니, 상세페이지의 최소 수량을 꼭 확인하시고 제품을 먼저 주문하여 설치 테스트를 해보시는 것이 좋습니다.",
+          "metadata": {
+            "intent": "FAQ"
+          },
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:50:07.911Z"
+        },
+        {
+          "id": "cmh09r0jf000fuakp6vagki3z",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "USER",
+          "content": "커튼박스가 뭐야?",
+          "metadata": null,
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:54:46.779Z"
+        },
+        {
+          "id": "cmh09r3kr000huakpfkgt7s8w",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "ASSISTANT",
+          "content": "아, 커튼박스에 대해 자세히 설명 드리겠습니다.\n\n커튼박스는 커튼을 설치하기 위해 천장이나 벽에 만든 사각형 틀을 말합니다.\n\n커튼박스 안쪽 너비는 커튼 제품 선택의 가장 중요한 기준입니다. 이 너비가 제품의 설치사이즈 범위에 들어야만 제품을 사용할 수 있습니다.\n\n예를 들어, 커튼박스 안쪽 너비가 110mm라면 노못 스프링 S사이즈(설치사이즈 100-120mm)가 적합할 것입니다. \n\n하지만 커튼박스 안쪽 너비가 130mm라면 S사이즈는 너무 작아 설치할 수 없고, M사이즈(설치사이즈 120-160mm)를 사용해야 합니다.\n\n즉, 커튼박스 안쪽 너비는 제품 선택의 가장 중요한 기준이 되는 것입니다. 이 치수를 정확히 알아야 적합한 제품을 선택할 수 있습니다.",
+          "metadata": {
+            "intent": "FAQ"
+          },
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:54:50.716Z"
+        },
+        {
+          "id": "cmh09w40c000juakp01gbswwy",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "USER",
+          "content": "커튼박스 안쪽 벽면크기가 낮은데 설치가능한가요?",
+          "metadata": null,
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:58:44.556Z"
+        },
+        {
+          "id": "cmh09w836000luakpylkjrybl",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "ASSISTANT",
+          "content": "네, 커튼박스 안쪽 벽면의 크기가 작은 경우에도 적절한 방법으로 설치할 수 있습니다.\n\n커튼박스 안쪽 너비가 작은 경우, 일반적으로 노못 스프링 제품군으로는 설치가 어려울 수 있습니다.\n\n하지만 다음과 같은 대안이 있습니다:\n\n1. 접이식 커튼봉 사용\n- 접이식 커튼봉을 이용하면 좁은 공간에도 설치할 수 있습니다.\n- 접이식 커튼봉의 경우 커튼박스 안쪽 벽면 크기가 100mm 이상이면 설치 가능합니다.\n\n2. 커튼레일 사용\n- 커튼레일은 노못 스프링보다 설치공간이 작아서, 커튼박스 안쪽 벽면 크기가 80mm 이상이면 설치할 수 있습니다.\n- 커튼레일은 수동, 전동 등 다양한 타입이 있습니다.\n\n3. 맞춤제작 커튼봉 요청\n- 커튼박스 내부 크기에 맞는 맞춤 제작 커튼봉을 주문하는 것도 방법입니다.\n- 이 경우 커튼박스 내부 치수를 정확히 알려주셔야 합니다.\n\n따라서 커튼박스 안쪽 벽면 크기가 80-100mm 이상이라면 접이식 커튼봉이나 커튼레일 등을 활용하여 설치할 수 있습니다. 정확한 치수를 알려주시면 더 자세히 안내해 드리겠습니다.",
+          "metadata": {
+            "intent": "FAQ"
+          },
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:58:49.843Z"
+        },
+        {
+          "id": "cmh09xcyc000nuakp0ap4r3w2",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "USER",
+          "content": "커튼박스 안쪽 벽면크기가 깊이가 낮은데 설치가능한가요?",
+          "metadata": null,
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:59:42.804Z"
+        },
+        {
+          "id": "cmh09xi6t000puakptjdrfq61",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "ASSISTANT",
+          "content": "네, 커튼박스 안쪽 벽면의 깊이가 낮은 경우에도 적절한 방법으로 커튼을 설치할 수 있습니다.\n\n커튼박스 안쪽의 깊이가 얕은 경우, 일반적인 노못 스프링 제품은 설치하기 어려울 수 있습니다.\n\n이 경우 다음과 같은 대안을 고려해볼 수 있습니다:\n\n1. 접이식 커튼봉 사용\n- 접이식 커튼봉은 설치 깊이가 얕아도 사용할 수 있습니다.\n- 대부분의 접이식 커튼봉은 70mm 이상의 깊이만 있으면 설치 가능합니다.\n\n2. 커튼레일 사용\n- 커튼레일은 노못 스프링보다 설치 깊이가 얕아서, 50mm 이상의 깊이에 설치할 수 있습니다.\n- 수동식, 전동식 등 다양한 타입의 커튼레일이 있습니다.\n\n3. 미니멀한 디자인의 커튼봉 사용\n- 일반 커튼봉보다 깊이가 얕은 미니멀한 디자인의 커튼봉을 사용할 수 있습니다.\n- 이런 경우 대개 40mm 이상의 깊이만 있으면 설치 가능합니다.\n\n따라서 커튼박스 안쪽 깊이가 40-70mm 이상이라면 접이식 커튼봉, 커튼레일, 미니멀 커튼봉 등을 활용하여 커튼을 설치할 수 있습니다. 정확한 치수를 알려주시면 더 자세한 대안을 안내해 드리겠습니다.",
+          "metadata": {
+            "intent": "FAQ"
+          },
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T07:59:49.590Z"
+        },
+        {
+          "id": "cmh0a12qx0001uaa8tfcx42ys",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "USER",
+          "content": "안녕하세요 해당 제품 구매하려고 하는데 커튼 봉을 달으려면 혹시 부자재를 따로 어떻게 구매해야하는건가요?",
+          "metadata": null,
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T08:02:36.200Z"
+        },
+        {
+          "id": "cmh0a171e0003uaa8z8th9616",
+          "sessionId": "cmh09fvt40001uakpgqfffmt2",
+          "role": "ASSISTANT",
+          "content": "네, 커튼 설치 시 커튼봉 외에 몇 가지 부자재가 추가로 필요합니다.\n\n커튼봉 설치를 위해 일반적으로 필요한 부자재는 다음과 같습니다:\n\n1. 커튼봉 고정용 브라켓\n- 천장이나 벽에 커튼봉을 고정하기 위해 필요한 부품입니다.\n- 브라켓의 개수는 커튼봉 길이에 따라 2-4개 정도 필요합니다.\n\n2. 캡 or 엔드캡\n- 커튼봉의 양 끝을 마무리하는 부품입니다.\n- 커튼봉 지름에 맞는 사이즈로 선택해야 합니다.\n\n3. 기타 악세사리\n- 커튼링, 커튼후크, 커튼조절기 등 커튼 고정 및 조절을 위한 소품들이 추가로 필요할 수 있습니다.\n\n이런 부자재들은 커튼봉과 별도로 구매해야 합니다. 커튼봉 제품 상세페이지에서 호환되는 부자재들을 확인하실 수 있습니다.\n\n구매하시려는 커튼봉의 길이와 지름을 먼저 확인하시고, 그에 맞는 부자재를 함께 선택하시면 됩니다.\n\n부자재 구매 관련 추가 문의사항이 있으시면 언제든 말씀해 주시기 바랍니다.",
+          "metadata": {
+            "intent": "GREETING"
+          },
+          "promptTokens": null,
+          "completionTokens": null,
+          "createdAt": "2025-10-21T08:02:41.762Z"
+        }
+      ],
+      "fallbackMessages": []
     }
   ],
   "faqCategories": [
@@ -4701,17 +4892,6 @@
   ],
   "productFaqs": [
     {
-      "id": "cmgz9sztg0000ua4brqe6z27k",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 S사이즈의 제품 규격은?",
-      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:08:32.946Z",
-      "updatedAt": "2025-10-20T15:08:32.946Z"
-    },
-    {
       "id": "cmgz9sztn0001ua4bxztpws52",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -4723,22 +4903,22 @@
       "updatedAt": "2025-10-20T15:08:32.946Z"
     },
     {
+      "id": "cmgz9sztg0000ua4brqe6z27k",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 S사이즈의 제품 규격은?",
+      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:08:32.946Z",
+      "updatedAt": "2025-10-21T08:03:45.148Z"
+    },
+    {
       "id": "cmgz9sztn0002ua4bx26vqnry",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
       "question": "노못 스프링 커튼봉이 걸리는 높이는?",
       "answer": "노못 스프링 S사이즈의 세로길이는 72mm이며, 커튼봉이 걸리는 위치는 천정면에서부터 50mm에 커튼봉 중심이 위치하게 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:08:32.946Z",
-      "updatedAt": "2025-10-20T15:08:32.946Z"
-    },
-    {
-      "id": "cmgz9sztn0003ua4bvy1ia5ua",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 실리콘밀착캡 규격은?",
-      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.",
       "category": "인테리어/커튼",
       "isActive": true,
       "createdAt": "2025-10-20T15:08:32.946Z",
@@ -4800,17 +4980,6 @@
       "updatedAt": "2025-10-20T15:08:32.946Z"
     },
     {
-      "id": "cmgz9szy30009ua4b8e3ily49",
-      "productId": "NOMOT-SPRING-M",
-      "productName": "노못 스프링 M사이즈",
-      "question": "노못 스프링 M사이즈의 제품 규격은?",
-      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:08:33.147Z",
-      "updatedAt": "2025-10-20T15:08:33.147Z"
-    },
-    {
       "id": "cmgz9szy3000aua4bvjo3hhl7",
       "productId": "NOMOT-SPRING-M",
       "productName": "노못 스프링 M사이즈",
@@ -4844,15 +5013,26 @@
       "updatedAt": "2025-10-20T15:08:33.147Z"
     },
     {
-      "id": "cmgz9szyp000dua4be3jfrcsr",
-      "productId": "NOMOT-ALLAROUNDER-L",
-      "productName": "노못 올라운더 L사이즈",
-      "question": "올라운더 L사이즈의 제품 규격은?",
-      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.",
+      "id": "cmgz9sztn0003ua4bvy1ia5ua",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 실리콘밀착캡 규격은?",
+      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
       "category": "인테리어/커튼",
       "isActive": true,
-      "createdAt": "2025-10-20T15:08:33.169Z",
-      "updatedAt": "2025-10-20T15:08:33.169Z"
+      "createdAt": "2025-10-20T15:08:32.946Z",
+      "updatedAt": "2025-10-21T08:03:45.151Z"
+    },
+    {
+      "id": "cmgz9szy30009ua4b8e3ily49",
+      "productId": "NOMOT-SPRING-M",
+      "productName": "노못 스프링 M사이즈",
+      "question": "노못 스프링 M사이즈의 제품 규격은?",
+      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:08:33.147Z",
+      "updatedAt": "2025-10-21T08:03:45.173Z"
     },
     {
       "id": "cmgz9szyp000eua4bmu0rp8re",
@@ -4943,17 +5123,6 @@
       "updatedAt": "2025-10-20T15:08:33.169Z"
     },
     {
-      "id": "cmgzaokk60000uamko21v7vgd",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 S사이즈의 제품 규격은?",
-      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:33:06.197Z",
-      "updatedAt": "2025-10-20T15:33:06.197Z"
-    },
-    {
       "id": "cmgzaokk60001uamkv2w1bvop",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -4976,17 +5145,6 @@
       "updatedAt": "2025-10-20T15:33:06.197Z"
     },
     {
-      "id": "cmgzaokk60003uamkdqg82o47",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 실리콘밀착캡 규격은?",
-      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:33:06.197Z",
-      "updatedAt": "2025-10-20T15:33:06.197Z"
-    },
-    {
       "id": "cmgzaokk60004uamkwg53uvi5",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -4996,6 +5154,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:33:06.197Z",
       "updatedAt": "2025-10-20T15:33:06.197Z"
+    },
+    {
+      "id": "cmgzaokk60003uamkdqg82o47",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 실리콘밀착캡 규격은?",
+      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:33:06.197Z",
+      "updatedAt": "2025-10-21T08:03:45.154Z"
     },
     {
       "id": "cmgzaokk60005uamkbgluf24j",
@@ -5042,17 +5211,6 @@
       "updatedAt": "2025-10-20T15:33:06.197Z"
     },
     {
-      "id": "cmgzaokkw0009uamk2091bdk3",
-      "productId": "NOMOT-SPRING-M",
-      "productName": "노못 스프링 M사이즈",
-      "question": "노못 스프링 M사이즈의 제품 규격은?",
-      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:33:06.225Z",
-      "updatedAt": "2025-10-20T15:33:06.225Z"
-    },
-    {
       "id": "cmgzaokkw000auamk36o7jv55",
       "productId": "NOMOT-SPRING-M",
       "productName": "노못 스프링 M사이즈",
@@ -5086,17 +5244,6 @@
       "updatedAt": "2025-10-20T15:33:06.225Z"
     },
     {
-      "id": "cmgzaokl0000duamkia81ocr9",
-      "productId": "NOMOT-ALLAROUNDER-L",
-      "productName": "노못 올라운더 L사이즈",
-      "question": "올라운더 L사이즈의 제품 규격은?",
-      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:33:06.228Z",
-      "updatedAt": "2025-10-20T15:33:06.228Z"
-    },
-    {
       "id": "cmgzaokl0000euamkdqpigq39",
       "productId": "NOMOT-ALLAROUNDER-L",
       "productName": "노못 올라운더 L사이즈",
@@ -5117,6 +5264,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:33:06.228Z",
       "updatedAt": "2025-10-20T15:33:06.228Z"
+    },
+    {
+      "id": "cmgzaokkw0009uamk2091bdk3",
+      "productId": "NOMOT-SPRING-M",
+      "productName": "노못 스프링 M사이즈",
+      "question": "노못 스프링 M사이즈의 제품 규격은?",
+      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:33:06.225Z",
+      "updatedAt": "2025-10-21T08:03:45.175Z"
     },
     {
       "id": "cmgzaokl0000guamk7c7ga7cl",
@@ -5185,17 +5343,6 @@
       "updatedAt": "2025-10-20T15:33:06.228Z"
     },
     {
-      "id": "cmgzaokl4000muamkfnm454wp",
-      "productId": "NOMOT-NOTAPRO",
-      "productName": "노타프로",
-      "question": "노타프로 제품 규격은?",
-      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:33:06.232Z",
-      "updatedAt": "2025-10-20T15:33:06.232Z"
-    },
-    {
       "id": "cmgzaokl4000nuamk1gg11r36",
       "productId": "NOMOT-NOTAPRO",
       "productName": "노타프로",
@@ -5249,6 +5396,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:33:06.232Z",
       "updatedAt": "2025-10-20T15:33:06.232Z"
+    },
+    {
+      "id": "cmgzaokl4000muamkfnm454wp",
+      "productId": "NOMOT-NOTAPRO",
+      "productName": "노타프로",
+      "question": "노타프로 제품 규격은?",
+      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:33:06.232Z",
+      "updatedAt": "2025-10-21T08:03:45.127Z"
     },
     {
       "id": "cmgzaokl4000suamkoo3dcx4i",
@@ -5350,17 +5508,6 @@
       "updatedAt": "2025-10-20T15:33:06.232Z"
     },
     {
-      "id": "cmgzathsh0000uavcdym3hh3x",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 S사이즈의 제품 규격은?",
-      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:36:55.888Z",
-      "updatedAt": "2025-10-20T15:36:55.888Z"
-    },
-    {
       "id": "cmgzathsh0001uavc1wstie4g",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -5377,17 +5524,6 @@
       "productName": "노못 스프링 S사이즈",
       "question": "노못 스프링 커튼봉이 걸리는 높이는?",
       "answer": "노못 스프링 S사이즈의 세로길이는 72mm이며, 커튼봉이 걸리는 위치는 천정면에서부터 50mm에 커튼봉 중심이 위치하게 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:36:55.888Z",
-      "updatedAt": "2025-10-20T15:36:55.888Z"
-    },
-    {
-      "id": "cmgzathsi0003uavcic57nvzx",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 실리콘밀착캡 규격은?",
-      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.",
       "category": "인테리어/커튼",
       "isActive": true,
       "createdAt": "2025-10-20T15:36:55.888Z",
@@ -5414,6 +5550,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:42:48.660Z",
       "updatedAt": "2025-10-20T15:42:48.660Z"
+    },
+    {
+      "id": "cmgzathsi0003uavcic57nvzx",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 실리콘밀착캡 규격은?",
+      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:36:55.888Z",
+      "updatedAt": "2025-10-21T08:03:45.158Z"
     },
     {
       "id": "cmgzathsi0005uavclzd8bmge",
@@ -5460,17 +5607,6 @@
       "updatedAt": "2025-10-20T15:36:55.888Z"
     },
     {
-      "id": "cmgzatht10009uavchiwpztaw",
-      "productId": "NOMOT-SPRING-M",
-      "productName": "노못 스프링 M사이즈",
-      "question": "노못 스프링 M사이즈의 제품 규격은?",
-      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:36:55.909Z",
-      "updatedAt": "2025-10-20T15:36:55.909Z"
-    },
-    {
       "id": "cmgzatht1000auavckerd7zx3",
       "productId": "NOMOT-SPRING-M",
       "productName": "노못 스프링 M사이즈",
@@ -5504,17 +5640,6 @@
       "updatedAt": "2025-10-20T15:36:55.909Z"
     },
     {
-      "id": "cmgzatht4000duavc0yjvqzlj",
-      "productId": "NOMOT-ALLAROUNDER-L",
-      "productName": "노못 올라운더 L사이즈",
-      "question": "올라운더 L사이즈의 제품 규격은?",
-      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:36:55.913Z",
-      "updatedAt": "2025-10-20T15:36:55.913Z"
-    },
-    {
       "id": "cmgzatht4000euavcsk7qujfo",
       "productId": "NOMOT-ALLAROUNDER-L",
       "productName": "노못 올라운더 L사이즈",
@@ -5535,6 +5660,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:36:55.913Z",
       "updatedAt": "2025-10-20T15:36:55.913Z"
+    },
+    {
+      "id": "cmgzatht10009uavchiwpztaw",
+      "productId": "NOMOT-SPRING-M",
+      "productName": "노못 스프링 M사이즈",
+      "question": "노못 스프링 M사이즈의 제품 규격은?",
+      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:36:55.909Z",
+      "updatedAt": "2025-10-21T08:03:45.178Z"
     },
     {
       "id": "cmgzatht4000guavcweadglfc",
@@ -5603,17 +5739,6 @@
       "updatedAt": "2025-10-20T15:36:55.913Z"
     },
     {
-      "id": "cmgzatht8000muavcel4ofrc2",
-      "productId": "NOMOT-NOTAPRO",
-      "productName": "노타프로",
-      "question": "노타프로 제품 규격은?",
-      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:36:55.917Z",
-      "updatedAt": "2025-10-20T15:36:55.917Z"
-    },
-    {
       "id": "cmgzatht8000nuavcrf8ouqkr",
       "productId": "NOMOT-NOTAPRO",
       "productName": "노타프로",
@@ -5667,6 +5792,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:36:55.917Z",
       "updatedAt": "2025-10-20T15:36:55.917Z"
+    },
+    {
+      "id": "cmgzatht8000muavcel4ofrc2",
+      "productId": "NOMOT-NOTAPRO",
+      "productName": "노타프로",
+      "question": "노타프로 제품 규격은?",
+      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:36:55.917Z",
+      "updatedAt": "2025-10-21T08:03:45.134Z"
     },
     {
       "id": "cmgzatht8000suavcn86gc5rm",
@@ -5900,17 +6036,6 @@
       "updatedAt": "2025-10-20T15:36:55.920Z"
     },
     {
-      "id": "cmgzb11yk0000uao25tq1eg2u",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 S사이즈의 제품 규격은?",
-      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:42:48.616Z",
-      "updatedAt": "2025-10-20T15:42:48.616Z"
-    },
-    {
       "id": "cmgzb11yk0001uao2act76vli",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -5927,17 +6052,6 @@
       "productName": "노못 스프링 S사이즈",
       "question": "노못 스프링 커튼봉이 걸리는 높이는?",
       "answer": "노못 스프링 S사이즈의 세로길이는 72mm이며, 커튼봉이 걸리는 위치는 천정면에서부터 50mm에 커튼봉 중심이 위치하게 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:42:48.616Z",
-      "updatedAt": "2025-10-20T15:42:48.616Z"
-    },
-    {
-      "id": "cmgzb11yk0003uao2fnss7r4a",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 실리콘밀착캡 규격은?",
-      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.",
       "category": "인테리어/커튼",
       "isActive": true,
       "createdAt": "2025-10-20T15:42:48.616Z",
@@ -5999,15 +6113,15 @@
       "updatedAt": "2025-10-20T15:42:48.616Z"
     },
     {
-      "id": "cmgzb11z50009uao2jkd4bahc",
-      "productId": "NOMOT-SPRING-M",
-      "productName": "노못 스프링 M사이즈",
-      "question": "노못 스프링 M사이즈의 제품 규격은?",
-      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.",
+      "id": "cmgzb11yk0003uao2fnss7r4a",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 실리콘밀착캡 규격은?",
+      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
       "category": "인테리어/커튼",
       "isActive": true,
-      "createdAt": "2025-10-20T15:42:48.642Z",
-      "updatedAt": "2025-10-20T15:42:48.642Z"
+      "createdAt": "2025-10-20T15:42:48.616Z",
+      "updatedAt": "2025-10-21T08:03:45.161Z"
     },
     {
       "id": "cmgzb11z5000auao230sfaozq",
@@ -6041,17 +6155,6 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:42:48.642Z",
       "updatedAt": "2025-10-20T15:42:48.642Z"
-    },
-    {
-      "id": "cmgzb11za000duao2lrl1mtyo",
-      "productId": "NOMOT-ALLAROUNDER-L",
-      "productName": "노못 올라운더 L사이즈",
-      "question": "올라운더 L사이즈의 제품 규격은?",
-      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:42:48.647Z",
-      "updatedAt": "2025-10-20T15:42:48.647Z"
     },
     {
       "id": "cmgzb11za000euao2nk43w1bs",
@@ -6140,17 +6243,6 @@
       "isActive": true,
       "createdAt": "2025-10-20T15:42:48.647Z",
       "updatedAt": "2025-10-20T15:42:48.647Z"
-    },
-    {
-      "id": "cmgzb11zg000muao2l3vb0em0",
-      "productId": "NOMOT-NOTAPRO",
-      "productName": "노타프로",
-      "question": "노타프로 제품 규격은?",
-      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T15:42:48.652Z",
-      "updatedAt": "2025-10-20T15:42:48.652Z"
     },
     {
       "id": "cmgzb11zg000nuao2kwyinyzx",
@@ -6483,17 +6575,6 @@
       "updatedAt": "2025-10-20T15:42:48.660Z"
     },
     {
-      "id": "cmgzbo8i00000uallc83l15md",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 S사이즈의 제품 규격은?",
-      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:00:50.181Z",
-      "updatedAt": "2025-10-20T16:00:50.181Z"
-    },
-    {
       "id": "cmgzbo8i00001uall8dyr7pbc",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -6510,17 +6591,6 @@
       "productName": "노못 스프링 S사이즈",
       "question": "노못 스프링 커튼봉이 걸리는 높이는?",
       "answer": "노못 스프링 S사이즈의 세로길이는 72mm이며, 커튼봉이 걸리는 위치는 천정면에서부터 50mm에 커튼봉 중심이 위치하게 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:00:50.181Z",
-      "updatedAt": "2025-10-20T16:00:50.181Z"
-    },
-    {
-      "id": "cmgzbo8i10003uallbiw4pv2z",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 실리콘밀착캡 규격은?",
-      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.",
       "category": "인테리어/커튼",
       "isActive": true,
       "createdAt": "2025-10-20T16:00:50.181Z",
@@ -6582,17 +6652,6 @@
       "updatedAt": "2025-10-20T16:00:50.181Z"
     },
     {
-      "id": "cmgzbo8im0009ualla6gs32tg",
-      "productId": "NOMOT-SPRING-M",
-      "productName": "노못 스프링 M사이즈",
-      "question": "노못 스프링 M사이즈의 제품 규격은?",
-      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:00:50.206Z",
-      "updatedAt": "2025-10-20T16:00:50.206Z"
-    },
-    {
       "id": "cmgzbo8im000auallany390ah",
       "productId": "NOMOT-SPRING-M",
       "productName": "노못 스프링 M사이즈",
@@ -6615,6 +6674,28 @@
       "updatedAt": "2025-10-20T16:00:50.206Z"
     },
     {
+      "id": "cmgzbo8i10003uallbiw4pv2z",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 실리콘밀착캡 규격은?",
+      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:00:50.181Z",
+      "updatedAt": "2025-10-21T08:03:45.166Z"
+    },
+    {
+      "id": "cmgzbo8im0009ualla6gs32tg",
+      "productId": "NOMOT-SPRING-M",
+      "productName": "노못 스프링 M사이즈",
+      "question": "노못 스프링 M사이즈의 제품 규격은?",
+      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:00:50.206Z",
+      "updatedAt": "2025-10-21T08:03:45.182Z"
+    },
+    {
       "id": "cmgzbo8im000cuall6rkqxywp",
       "productId": "NOMOT-SPRING-M",
       "productName": "노못 스프링 M사이즈",
@@ -6624,17 +6705,6 @@
       "isActive": true,
       "createdAt": "2025-10-20T16:00:50.206Z",
       "updatedAt": "2025-10-20T16:00:50.206Z"
-    },
-    {
-      "id": "cmgzbo8ir000duall73sv5epe",
-      "productId": "NOMOT-ALLAROUNDER-L",
-      "productName": "노못 올라운더 L사이즈",
-      "question": "올라운더 L사이즈의 제품 규격은?",
-      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:00:50.212Z",
-      "updatedAt": "2025-10-20T16:00:50.212Z"
     },
     {
       "id": "cmgzbo8ir000euall9ky4vv5a",
@@ -6725,17 +6795,6 @@
       "updatedAt": "2025-10-20T16:00:50.212Z"
     },
     {
-      "id": "cmgzbo8ix000muallogkk4sbh",
-      "productId": "NOMOT-NOTAPRO",
-      "productName": "노타프로",
-      "question": "노타프로 제품 규격은?",
-      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:00:50.217Z",
-      "updatedAt": "2025-10-20T16:00:50.217Z"
-    },
-    {
       "id": "cmgzbo8ix000nuallsj6d70l9",
       "productId": "NOMOT-NOTAPRO",
       "productName": "노타프로",
@@ -6745,6 +6804,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T16:00:50.217Z",
       "updatedAt": "2025-10-20T16:00:50.217Z"
+    },
+    {
+      "id": "cmgzbo8ix000muallogkk4sbh",
+      "productId": "NOMOT-NOTAPRO",
+      "productName": "노타프로",
+      "question": "노타프로 제품 규격은?",
+      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:00:50.217Z",
+      "updatedAt": "2025-10-21T08:03:45.140Z"
     },
     {
       "id": "cmgzbo8ix000ouallsheevbup",
@@ -7198,17 +7268,6 @@
       "updatedAt": "2025-10-20T16:00:50.228Z"
     },
     {
-      "id": "cmgzbtwex0000uab4rw4jeab2",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 S사이즈의 제품 규격은?",
-      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:05:14.453Z",
-      "updatedAt": "2025-10-20T16:05:14.453Z"
-    },
-    {
       "id": "cmgzbtwey0001uab4zgos3eny",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -7231,17 +7290,6 @@
       "updatedAt": "2025-10-20T16:05:14.453Z"
     },
     {
-      "id": "cmgzbtwey0003uab4j1ad9whf",
-      "productId": "NOMOT-SPRING-S",
-      "productName": "노못 스프링 S사이즈",
-      "question": "노못 스프링 실리콘밀착캡 규격은?",
-      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:05:14.453Z",
-      "updatedAt": "2025-10-20T16:05:14.453Z"
-    },
-    {
       "id": "cmgzbtwey0004uab4gw5cy2pr",
       "productId": "NOMOT-SPRING-S",
       "productName": "노못 스프링 S사이즈",
@@ -7251,6 +7299,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T16:05:14.453Z",
       "updatedAt": "2025-10-20T16:05:14.453Z"
+    },
+    {
+      "id": "cmgzbtwey0003uab4j1ad9whf",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 실리콘밀착캡 규격은?",
+      "answer": "실리콘밀착캡 지름은 34mm이며, 힘을 받는 원 중심으로 한 지름 20mm 부분은 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:05:14.453Z",
+      "updatedAt": "2025-10-21T08:03:45.169Z"
     },
     {
       "id": "cmgzbtwey0005uab4qprhz1gq",
@@ -7297,17 +7356,6 @@
       "updatedAt": "2025-10-20T16:05:14.453Z"
     },
     {
-      "id": "cmgzbtwfj0009uab4ot06c149",
-      "productId": "NOMOT-SPRING-M",
-      "productName": "노못 스프링 M사이즈",
-      "question": "노못 스프링 M사이즈의 제품 규격은?",
-      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:05:14.479Z",
-      "updatedAt": "2025-10-20T16:05:14.479Z"
-    },
-    {
       "id": "cmgzbtwfj000auab4pm7ebjoa",
       "productId": "NOMOT-SPRING-M",
       "productName": "노못 스프링 M사이즈",
@@ -7341,17 +7389,6 @@
       "updatedAt": "2025-10-20T16:05:14.479Z"
     },
     {
-      "id": "cmgzbtwfo000duab4j2ussf6c",
-      "productId": "NOMOT-ALLAROUNDER-L",
-      "productName": "노못 올라운더 L사이즈",
-      "question": "올라운더 L사이즈의 제품 규격은?",
-      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:05:14.484Z",
-      "updatedAt": "2025-10-20T16:05:14.484Z"
-    },
-    {
       "id": "cmgzbtwfo000euab4qivx8qvo",
       "productId": "NOMOT-ALLAROUNDER-L",
       "productName": "노못 올라운더 L사이즈",
@@ -7372,6 +7409,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T16:05:14.484Z",
       "updatedAt": "2025-10-20T16:05:14.484Z"
+    },
+    {
+      "id": "cmgzbtwfj0009uab4ot06c149",
+      "productId": "NOMOT-SPRING-M",
+      "productName": "노못 스프링 M사이즈",
+      "question": "노못 스프링 M사이즈의 제품 규격은?",
+      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:05:14.479Z",
+      "updatedAt": "2025-10-21T08:03:45.183Z"
     },
     {
       "id": "cmgzbtwfo000guab42cqv19ez",
@@ -7440,17 +7488,6 @@
       "updatedAt": "2025-10-20T16:05:14.484Z"
     },
     {
-      "id": "cmgzbtwfu000muab4zub2sa44",
-      "productId": "NOMOT-NOTAPRO",
-      "productName": "노타프로",
-      "question": "노타프로 제품 규격은?",
-      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm",
-      "category": "인테리어/커튼",
-      "isActive": true,
-      "createdAt": "2025-10-20T16:05:14.490Z",
-      "updatedAt": "2025-10-20T16:05:14.490Z"
-    },
-    {
       "id": "cmgzbtwfu000nuab4vbeu0yo3",
       "productId": "NOMOT-NOTAPRO",
       "productName": "노타프로",
@@ -7504,6 +7541,17 @@
       "isActive": true,
       "createdAt": "2025-10-20T16:05:14.490Z",
       "updatedAt": "2025-10-20T16:05:14.490Z"
+    },
+    {
+      "id": "cmgzbtwfu000muab4zub2sa44",
+      "productId": "NOMOT-NOTAPRO",
+      "productName": "노타프로",
+      "question": "노타프로 제품 규격은?",
+      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:05:14.490Z",
+      "updatedAt": "2025-10-21T08:03:45.143Z"
     },
     {
       "id": "cmgzbtwfu000suab4lpzslent",
@@ -8032,6 +8080,149 @@
       "isActive": true,
       "createdAt": "2025-10-20T17:50:35.307Z",
       "updatedAt": "2025-10-20T17:50:35.307Z"
+    },
+    {
+      "id": "cmgz9szyp000dua4be3jfrcsr",
+      "productId": "NOMOT-ALLAROUNDER-L",
+      "productName": "노못 올라운더 L사이즈",
+      "question": "올라운더 L사이즈의 제품 규격은?",
+      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 2cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:08:33.169Z",
+      "updatedAt": "2025-10-21T08:03:45.098Z"
+    },
+    {
+      "id": "cmgzaokl0000duamkia81ocr9",
+      "productId": "NOMOT-ALLAROUNDER-L",
+      "productName": "노못 올라운더 L사이즈",
+      "question": "올라운더 L사이즈의 제품 규격은?",
+      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 2cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:33:06.228Z",
+      "updatedAt": "2025-10-21T08:03:45.112Z"
+    },
+    {
+      "id": "cmgzatht4000duavc0yjvqzlj",
+      "productId": "NOMOT-ALLAROUNDER-L",
+      "productName": "노못 올라운더 L사이즈",
+      "question": "올라운더 L사이즈의 제품 규격은?",
+      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 2cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:36:55.913Z",
+      "updatedAt": "2025-10-21T08:03:45.114Z"
+    },
+    {
+      "id": "cmgzb11za000duao2lrl1mtyo",
+      "productId": "NOMOT-ALLAROUNDER-L",
+      "productName": "노못 올라운더 L사이즈",
+      "question": "올라운더 L사이즈의 제품 규격은?",
+      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 2cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:42:48.647Z",
+      "updatedAt": "2025-10-21T08:03:45.116Z"
+    },
+    {
+      "id": "cmgzbo8ir000duall73sv5epe",
+      "productId": "NOMOT-ALLAROUNDER-L",
+      "productName": "노못 올라운더 L사이즈",
+      "question": "올라운더 L사이즈의 제품 규격은?",
+      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 2cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:00:50.212Z",
+      "updatedAt": "2025-10-21T08:03:45.119Z"
+    },
+    {
+      "id": "cmgzbtwfo000duab4j2ussf6c",
+      "productId": "NOMOT-ALLAROUNDER-L",
+      "productName": "노못 올라운더 L사이즈",
+      "question": "올라운더 L사이즈의 제품 규격은?",
+      "answer": "노못 올라운더 L사이즈 제품규격:\n- 설치사이즈: 110~205mm\n- 제품 가로사이즈: 최소 110mm, 최대 160mm\n- 제품 가로사이즈(연장모듈 추가 시): 최소 160mm, 최대 214mm\n- 실리콘 높이: 20mm\n- 본체 전체 높이: 45mm\n\n실리콘밀착캡 높이는 20mm이며, 20mm 전면이 반드시 커튼박스의 벽면과 맞닿아 있어야 합니다.\n\n커튼 제작 시 참고:\n올라운더 제품의 세로 길이는 45mm로, 커튼 제작 시 [(바닥에서 커튼박스 내 천정 높이) - 45mm]를 주문제작 사이즈로 전달하시면 됩니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 2cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:05:14.484Z",
+      "updatedAt": "2025-10-21T08:03:45.121Z"
+    },
+    {
+      "id": "cmgzb11zg000muao2l3vb0em0",
+      "productId": "NOMOT-NOTAPRO",
+      "productName": "노타프로",
+      "question": "노타프로 제품 규격은?",
+      "answer": "노타프로 제품규격:\n- 설치사이즈: 120~180mm\n- 제품 가로사이즈: 120mm, 세로 30mm, 높이 30mm\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:42:48.652Z",
+      "updatedAt": "2025-10-21T08:03:45.136Z"
+    },
+    {
+      "id": "cmgzaokk60000uamko21v7vgd",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 S사이즈의 제품 규격은?",
+      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:33:06.197Z",
+      "updatedAt": "2025-10-21T08:03:45.152Z"
+    },
+    {
+      "id": "cmgzathsh0000uavcdym3hh3x",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 S사이즈의 제품 규격은?",
+      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:36:55.888Z",
+      "updatedAt": "2025-10-21T08:03:45.156Z"
+    },
+    {
+      "id": "cmgzb11yk0000uao25tq1eg2u",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 S사이즈의 제품 규격은?",
+      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:42:48.616Z",
+      "updatedAt": "2025-10-21T08:03:45.160Z"
+    },
+    {
+      "id": "cmgzbo8i00000uallc83l15md",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 S사이즈의 제품 규격은?",
+      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:00:50.181Z",
+      "updatedAt": "2025-10-21T08:03:45.163Z"
+    },
+    {
+      "id": "cmgzbtwex0000uab4rw4jeab2",
+      "productId": "NOMOT-SPRING-S",
+      "productName": "노못 스프링 S사이즈",
+      "question": "노못 스프링 S사이즈의 제품 규격은?",
+      "answer": "노못 스프링 S사이즈 제품규격:\n- 설치사이즈: 100~120mm\n- 제품 가로사이즈: 최소 100mm, 최대 125mm (설치가능 길이는 120mm까지)\n- 제품 높이: 72mm\n- 커튼봉 걸림 높이: 천정면에서 50mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T16:05:14.453Z",
+      "updatedAt": "2025-10-21T08:03:45.167Z"
+    },
+    {
+      "id": "cmgzb11z50009uao2jkd4bahc",
+      "productId": "NOMOT-SPRING-M",
+      "productName": "노못 스프링 M사이즈",
+      "question": "노못 스프링 M사이즈의 제품 규격은?",
+      "answer": "노못 스프링 M사이즈 제품규격:\n- 설치사이즈: 120~160mm\n- 제품 가로사이즈: 최소 120mm, 최대 165mm (설치가능 길이는 160mm까지)\n- 제품 높이: 85mm (84mm)\n- 커튼봉 걸림 높이: 천정면에서 60mm 위치에 커튼봉 중심 위치\n- 제품 두께: 35mm\n- 실리콘밀착캡 지름: 34mm (힘을 받는 원 중심 지름 20mm 부분은 반드시 커튼박스 벽면과 맞닿아야 함)\n\n참고: 커튼박스가 160mm인 경우 M사이즈로 설치 가능하며, 120mm인 경우 S, M사이즈 모두 설치 가능하나 M사이즈를 추천드립니다.\n\n※ 커튼박스 높이(깊이) 제약사항: 최소 3.5cm 이상",
+      "category": "인테리어/커튼",
+      "isActive": true,
+      "createdAt": "2025-10-20T15:42:48.642Z",
+      "updatedAt": "2025-10-21T08:03:45.180Z"
     }
   ],
   "conversationFlows": [
